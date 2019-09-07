@@ -1,7 +1,9 @@
 # rep.taoweidong.github.io
+
 个人博客的开发仓库，与仓库taoweidong.github.io对应
 
 # 开发步骤如下
+
 - 安装git,node,hexo等开发环境
 - 首先克隆当前仓库到本地
 - 安装相关依赖 npm install
