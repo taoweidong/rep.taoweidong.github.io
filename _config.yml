@@ -111,7 +111,7 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/  
 ## landscape
 #theme 	当前主题名称。值为false时禁用主题
-theme: yilia
+theme: yilia-plus
 
 ##你的头像url
 avatar: http://img3.imgtn.bdimg.com/it/u=1121475478,2545730346&fm=214&gp=0.jpg

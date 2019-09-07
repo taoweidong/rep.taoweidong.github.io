@@ -24,6 +24,8 @@ CountDownLatch 在多线程中也是这样的作用，在闭锁到达结束状�
 
 参考： https://www.cnblogs.com/wei-zw/p/8797757.html
 
+<!--more-->
+
 # 示例代码
 
 ```java

@@ -1,10 +1,11 @@
-# Header
+# Header-菜单
 menu:
   主页: /
-  随笔: /随笔
+  # 技术笔记: https://zhousiwei.gitee.io/ibooks/
+  随笔: /tags/随笔/
 
-# SubNav
-subnav:
+# subNav-子导航
+subNav:
   github: "https://github.com/taoweidong"
   weibo: "https://weibo.com/p/1005052941472883/home?from=page_100505&mod=TAB#place"
   #rss: "#"
@@ -22,6 +23,7 @@ subnav:
   #twitter: "#"
   #linkedin: "#"
 
+# RSS订阅(关于如何配置启用:https://www.jianshu.com/p/2aaac7a19736)
 rss: /atom.xml
 
 # 是否需要修改 root 路径
