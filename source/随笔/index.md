@@ -6,15 +6,13 @@ tag:
 - 随笔
 ---
 
-# 配置随笔页面
+# 在主题配置文件中配置菜单
 
-> 在主题配置文件中配置菜单
-
-![](https://i.imgur.com/xDvLtF9.png)
 
 # 生成对应菜单的页面
 
-![](https://i.imgur.com/W2IPeHO.png)
 
 # 构建-部署
+
+ 此页面待完善
 

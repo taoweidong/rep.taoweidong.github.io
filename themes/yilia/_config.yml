@@ -1,5 +1,4 @@
 # Header
-
 menu:
   主页: /
   随笔: /随笔
@@ -9,11 +8,11 @@ subnav:
   github: "https://github.com/taoweidong"
   weibo: "https://weibo.com/p/1005052941472883/home?from=page_100505&mod=TAB#place"
   #rss: "#"
-  zhihu: "https://www.zhihu.com/people/taowd/activities"
+  #zhihu: "https://www.zhihu.com/people/taowd/activities"
   #qq: "#"
-  #weixin: "#"
-  jianshu: "https://www.jianshu.com/u/99a9a5f5629c"
-  #douban: "#"
+  weixin: "http://www.taoweidong.com/"
+  #jianshu: "https://www.jianshu.com/u/99a9a5f5629c"
+  douban: "http://www.taoweidong.com/"
   #segmentfault: "#"
   #bilibili: "#"
   #acfun: "#"
@@ -131,6 +130,8 @@ friends:
   TypeScript: http://www.oschina.net/question/12_72250
   个人博客: http://www.taoweidong.com
   微服务: https://www.cnblogs.com/liuning8023/p/4493156.html
+  HEXO: https://hexo.io/zh-cn/
+  Hadoop: http://hadoop.apache.org/docs/r1.0.4/cn/quickstart.html
   
 
-aboutme: 心之所向，梦之所在，一个努力学习的程序猿！
+aboutme: 心之所向，梦之所在. 一个努力学习的程序猿！
