@@ -270,6 +270,8 @@ friends:
     url: https://hexo.io/zh-cn/
   Hadoop: 
     url: http://hadoop.apache.org/docs/r1.0.4/cn/quickstart.html
+  个人学习:
+    url: http://123.206.74.225/#/
 
 # 关于我
 aboutme: 心之所向，梦之所在.<br> 一个努力学习的程序猿！<br><br>  涉及技术：<br>JavaWeb后端技术开发<br>SpringCloud微服务<br>开源爱好者、CI集成<br><br><br>联系QQ:546642132<br>
