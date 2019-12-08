@@ -4,7 +4,7 @@
 
 # Site
 title: 半度微凉
-subtitle: 
+subtitle:
 description: Java,技术
 author: 半度微凉
 language: zh-Hans
@@ -13,9 +13,9 @@ timezone: UTC
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 
-#url 	网址 	
+#url 	网址
 url: http://www.taoweidong.com
-#root 	网站根目录 	
+#root 	网站根目录
 root: /
 #permalink 	文章的 永久链接 格式 	:year/:month/:day/:title/
 permalink: :year/:month/:day/:title/
@@ -43,7 +43,7 @@ i18n_dir: :lang
 # 路径是相对source目录的
 # 不对google7caf449f9ab0f94b.html与your-other-ignore-file进行渲染，保持文件原有内容
 skip_render:
-  - "README.md" 
+  - "README.md"
 #skip_render:
 #  - 'baidu.html'
 #  - 'google.html'
@@ -74,22 +74,22 @@ highlight:
   line_number: true
   auto_detect: false
   tab_replace:
-  
+
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
-  path: ''
+  path: ""
   per_page: 5
   order_by: -date
-  
+
 # Category & Tag
 #default_category 	默认分类
 default_category: uncategorized
 #category_map 	分类别名
 category_map:
-#tag_map 	标签别名 	
+#tag_map 	标签别名
 tag_map:
 
 # Date / Time format
@@ -108,7 +108,7 @@ pagination_dir: page
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
-## Themes: https://hexo.io/themes/  
+## Themes: https://hexo.io/themes/
 ## landscape
 #theme 	当前主题名称。值为false时禁用主题
 theme: yilia-plus
@@ -117,27 +117,28 @@ theme: yilia-plus
 avatar: http://img3.imgtn.bdimg.com/it/u=1121475478,2545730346&fm=214&gp=0.jpg
 
 jsonContent:
-    meta: false
-    pages: false
-    posts:
-      title: true
-      date: true
-      path: true
-      text: false
-      raw: false
-      content: false
-      slug: false
-      updated: false
-      comments: false
-      link: false
-      permalink: false
-      excerpt: false
-      categories: false
-      tags: true
+  meta: false
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    text: false
+    raw: false
+    content: false
+    slug: false
+    updated: false
+    comments: false
+    link: false
+    permalink: false
+    excerpt: false
+    categories: false
+    tags: true
 
 # Deployment  deploy 	部署部分的设置
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
- type: git
- repo: https://github.com/taoweidong/taoweidong.github.io.git
- branch: master
+  type: git
+  repo: https://github.com/taoweidong/taoweidong.github.io.git
+  branch: master
+  message: "博客更新: {{ now('YYYY-MM-DD HH:mm:ss') }}"
