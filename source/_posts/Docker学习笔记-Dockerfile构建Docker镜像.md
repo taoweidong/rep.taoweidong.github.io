@@ -1,7 +1,7 @@
 ----------
 title: Docker学习笔记-Dockerfile构建Docker镜像
 
-date: 2018-4-13 13:25:55
+date: 2020-2-18 19:21:41
 
 toc: true
 
@@ -20,7 +20,7 @@ Docker 可以通过 Dockerfile 的内容来自动构建镜像。Dockerfile 是�
 
 ## ADD
 
-```
+```shell
 ADD <src>... <dest>
 ```
 
@@ -139,7 +139,7 @@ WORKDIR /path/to/workdir
 
 为后续的RUN、CMD、ENTRYPOINT指令配置工作目录。可以使用多个WORKDIR指令，后续命令如果参数是相对路径，则会基于之前命令指定的路径。
 
-```
+```shell
 WORKDIR /a
 WORKDIR b
 WORKDIR c
