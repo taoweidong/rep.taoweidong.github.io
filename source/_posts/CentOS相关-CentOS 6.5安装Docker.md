@@ -55,7 +55,7 @@ tag:
 	docker version
 
 ![](https://i.imgur.com/sap48ve.png)
- 
+
 
 ## 测试docker
 
@@ -73,6 +73,7 @@ tag:
 
 ## 相关命令
 
+```shell
 docker version 查看docker的版本号，包括客户端、服务端、依赖的Go等
 
 docker info 查看系统(docker)层面信息，包括管理的images, containers数等
@@ -101,7 +102,7 @@ docker logs <container> 查看container的日志，也就是执行命令的一�
 
 docker rm <container...> 删除一个或多个container
 
-docker rm `docker ps -a -q` 删除所有的container
+docker rm docker ps -a -q 删除所有的container
 
 docker ps -a -q | xargs docker rm 同上, 删除所有的container
 
@@ -117,7 +118,7 @@ docker run <image> <command> 使用image创建container并执行相应命令，�
 
 docker run -i -t <image> /bin/bash 使用image创建container并进入交互模式, login shell是/bin/bash
 
-docker run -i -t -p <host_port:contain_port> 将container的端口映射到宿主机的端口
+docker run -i -t -p host_port:contain_port 将container的端口映射到宿主机的端口
 
 docker commit <container> [repo:tag] 将一个container固化为一个新的image，后面的repo:tag可选
 
@@ -130,3 +131,6 @@ docker build - < <dockerfile> 使用指定的dockerfile配置文件，docker以s
 docker port <container> <container port> 查看本地哪个端口映射到container的指定端口，其实用docker ps 也可以看到
 
 docker 把宿主机的目录挂载到docker容器里
+
+```
+
