@@ -1,7 +1,7 @@
 ----------
 title: Docker学习笔记-Docker基础知识
 
-date: 2018-4-9 20:21:57
+date: 2020-2-18 17:50:12
 
 toc: true
 
@@ -43,7 +43,7 @@ tag:
 3. 系统环境检查：
 
  ```shell
-   uname -a
+uname -a
  ```
 ![环境检查](https://img-blog.csdnimg.cn/20200218165324394.png)
 
@@ -61,34 +61,29 @@ top
 - Docker 软件包和依赖包已经包含在默认的 CentOS-Extras 软件源里，安装命令如下：
 
  ```shell
-  [root@Taowd-PC docker]# yum -y install docker
+[root@Taowd-PC docker]# yum -y install docker
  ```
-![](https://imgconvert.csdnimg.cn/aHR0cDovL3d3dy5ydW5vb2IuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDE2LzA1L2RvY2tlcjA5LnBuZw?x-oss-process=image/format,png)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200218174102916.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhb3dlaWRvbmcx,size_16,color_FFFFFF,t_70)
 
 ## 启动 Docker 后台服务
 
 ```shell
 [root@runoob ~]# service docker start
 ```
-
-[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-rVNcMgur-1582015869451)(https://i.imgur.com/nOah2AT.png)]
-
+![启动 Docker 后台服务](https://img-blog.csdnimg.cn/20200218174325825.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhb3dlaWRvbmcx,size_16,color_FFFFFF,t_70)
 ## 查看docker版本信息
 
 ```shell
 [root@Taowd-PC ~]# docker version
 ```
-
-[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-noFJ7o9j-1582015869452)(https://i.imgur.com/RtFd9f0.png)]
+![查看docker版本信息](https://img-blog.csdnimg.cn/20200218174308368.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhb3dlaWRvbmcx,size_16,color_FFFFFF,t_70)
 
 ## 测试运行docker的 hello-world
 
 ```shell
 [root@Taowd-PC ~]# docker run hello-world
 ```
-
-[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-4kClIB30-1582015869452)(https://i.imgur.com/t9A0BzX.png)]
-
+![测试运行docker的 hello-world](https://img-blog.csdnimg.cn/20200218174833465.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhb3dlaWRvbmcx,size_16,color_FFFFFF,t_70)
 由于本地没有hello-world这个镜像，所以会下载一个hello-world的镜像，并在容器内运行。
 
 ## 镜像加速
@@ -99,9 +94,13 @@ top
 
 请在该配置文件中加入（没有该文件的话，请先建一个）：
 
-```shell
+```json
 {
-  "registry-mirrors": ["http://hub-mirror.c.163.com"]
+  "registry-mirrors": [
+    "https://registry.docker-cn.com",
+    "http://hub-mirror.c.163.com",
+    "https://docker.mirrors.ustc.edu.cn"
+  ]
 }
 ```
 
@@ -109,3 +108,5 @@ top
 - [https://www.runoob.com/docker/docker-tutorial.html](https://www.runoob.com/docker/docker-tutorial.html)
 - [https://www.docker.com/](https://www.docker.com/)
 - [Docker中文社区](http://www.docker.org.cn/)
+
+

@@ -1,7 +1,7 @@
 ----------
 title: Docker学习笔记-Docker镜像常用命令
 
-date: 2018-4-10 14:01:34
+date: 2020-2-18 17:53:34
 
 toc: true
 
@@ -19,7 +19,7 @@ Docker镜像是一个只读模板，它包括创建Docker容器的说明。和�
 
 image 是二进制文件。实际开发中，一个 image 文件往往通过继承另一个 image 文件，加上一些个性化设置而生成。举例来说，你可以在 Ubuntu 的 image 基础上，往里面加入 Apache 服务器，形成你的 image。
 
-```
+```shell
 # 列出本机的所有 image 文件。
 $ docker image ls
 

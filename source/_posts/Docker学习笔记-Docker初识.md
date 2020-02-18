@@ -1,7 +1,7 @@
 ----------
 title: Docker学习笔记-Docker初识
 
-date: 2018-4-9 20:20:20
+date: 2020-2-18 17:50:38
 
 toc: true
 
@@ -99,24 +99,24 @@ Docker CE 的安装请参考官方文档。
 安装完成后，运行下面的命令，验证是否安装成功。
 
  ```shell
- $ docker version
- # 或者
- $ docker info
+$ docker version
+# 或者
+$ docker info
  ```
 
 Docker 需要用户具有 sudo 权限，为了避免每次命令都输入`sudo`，可以把用户加入 Docker 用户组（[官方文档](https://docs.docker.com/install/linux/linux-postinstall/#manage-docker-as-a-non-root-user)）。
 
  ```shell
- $ sudo usermod -aG docker $USER
+$ sudo usermod -aG docker $USER
  ```
 
 Docker 是服务器----客户端架构。命令行运行`docker`命令的时候，需要本机有 Docker 服务。如果这项服务没有启动，可以用下面的命令启动（[官方文档](https://docs.docker.com/config/daemon/systemd/)）。
 
 ```shell
- # service 命令的用法
- $ sudo service docker start
- # systemctl 命令的用法
- $ sudo systemctl start docker
+# service 命令的用法
+$ sudo service docker start
+# systemctl 命令的用法
+$ sudo systemctl start docker
 ```
 
 解释1：Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的容器中，然后发布到任何流行的 Linux 机器上，也可以实现虚拟化。容器是完全使用沙箱机制，相互之间不会有任何接口。
