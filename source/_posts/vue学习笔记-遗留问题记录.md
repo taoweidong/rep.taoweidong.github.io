@@ -52,6 +52,7 @@ http.createServer(function(request,response){
 console.log("Hello World Node.js Running...");
 
 ```
+<!--more-->
 
 运行
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20191106200734769.png)
