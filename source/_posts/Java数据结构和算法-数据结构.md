@@ -13,11 +13,8 @@ tag:
 ----------
 
 # 数据结构简介
-
 数据结构是指相互之间存在着一种或多种关系的数据元素的集合和该集合中数据元素之间的关系组成 。 常用的数据结构有：数组，栈，链表，队列，树，图，堆，散列表等，如图所示： 
-
-![数据结构](https://img-blog.csdn.net/20180903194901687?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3lleWF6aGlzaGFuZw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
-
+![数据结构简介](https://img-blog.csdnimg.cn/20200219192500640.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhb3dlaWRvbmcx,size_16,color_FFFFFF,t_70)
 数据结构包括：线性结构和非线性结构
 
 ## 线性结构
@@ -39,15 +36,11 @@ tag:
   - 造成存储空间碎片
 
 ## 非线性结构
-
 - 包括：二维数组，多维数组，广义表，树结构，图结构
-
 ## 稀疏数组
-
 定义：当一个数组中大部分元素为0，或者为同一个值得数组时，可以使用稀疏数组来保存该数组
 
 ### Java中定义数组的方式
-
 ```java
 public static void main(String[] args) {
     String[] array = {"Hello", "World", "Java"};
@@ -56,7 +49,6 @@ public static void main(String[] args) {
 ```
 
 ### 稀疏数组的处理方法
-
 - 记录数组一共有几行几列，有多少不同的值
 - 把具有不同值得元素的行列及值记录在一个**小规模的数组**(稀疏数组)中，从而缩小程序的规模
 
@@ -66,4 +58,3 @@ public static void main(String[] args) {
 
 - [https://blog.csdn.net/yeyazhishang/article/details/82353846](https://blog.csdn.net/yeyazhishang/article/details/82353846)
 - [https://www.jianshu.com/p/30fdd6faea79](https://www.jianshu.com/p/30fdd6faea79)
-- 
