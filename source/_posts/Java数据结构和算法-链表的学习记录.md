@@ -147,6 +147,8 @@ public class HeroNode {
 - 单向链表的添加和显示
 - 单向链表的排序添加
 - 单向链表删除指定节点
+- 获取链表的节点个数
+- 获取链表的倒数第k个节点
 
 ```java
 package com.data.structure;
@@ -159,7 +161,7 @@ import java.util.Objects;
  * 单链表实现
  * @author Taoweidong
  */
-public class SingleLinkedList {
+public class SingleLinkedDemo {
 
 	public static void main(String[] args) {
 
@@ -183,6 +185,61 @@ public class SingleLinkedList {
 		System.out.println("**************************************");
 		singleNode.delete(node4New);
 		singleNode.showAll();
+
+		System.out.println("**************************************");
+		System.out.println(getLength(singleNode.getHead()));
+
+		System.out.println("**************************************");
+		System.out.println(findLastIndexNode(singleNode.getHead(), 1));
+	}
+
+	/**
+	 * 获取倒数第K个节点的数据
+	 * @param heroNode 节点
+	 * @param index    倒数第index节点
+	 * @return 节点信息
+	 */
+	public static SingleHeroNode findLastIndexNode(SingleHeroNode heroNode, int index) {
+
+		if (Objects.isNull(heroNode)) {
+			return null;
+		}
+
+		int size = getLength(heroNode);
+
+		//检查规范性
+		if (index <= 0 || index > size) {
+			return null;
+		}
+
+		SingleHeroNode temp = heroNode.next;
+		for (int i = 1; i <= size - index; i++) {
+			temp = temp.next;
+		}
+
+		return temp;
+
+	}
+
+	/**
+	 * 获取链表的个数
+	 * @param heroNode
+	 * @return
+	 */
+	public static int getLength(SingleHeroNode heroNode) {
+
+		if (Objects.isNull(heroNode.next)) {
+			return 0;
+		}
+
+		SingleHeroNode temp = heroNode.next;
+		int count = 0;
+		while (Objects.nonNull(temp)) {
+			temp = temp.next;
+			count++;
+		}
+
+		return count;
 	}
 
 }
@@ -193,9 +250,18 @@ public class SingleLinkedList {
 class SingleHeroNodeManage {
 
 	/**
+	 * 返回头结点
+	 * @return
+	 */
+	public SingleHeroNode getHead() {
+
+		return head;
+	}
+
+	/**
 	 * 先初始化一个头结点:一般不需要动
 	 */
-	public SingleHeroNode head = new SingleHeroNode(0, StringUtils.EMPTY, 0);
+	private SingleHeroNode head = new SingleHeroNode(0, StringUtils.EMPTY, 0);
 
 	/**
 	 * 删除节点
