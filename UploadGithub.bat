@@ -1,6 +1,6 @@
 REM git --version
 git add -A
-git commit -m "鍗氬鏇存柊"
+git commit -m "博客更新"
 git push origin master
 REM git branch -u origin/master master
-echo 鐮佷簯鏇存柊鎴愬姛
+echo 码云更新成功
