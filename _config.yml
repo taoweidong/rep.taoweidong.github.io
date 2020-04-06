@@ -151,7 +151,7 @@ jsonContent:
 # Deployment  deploy 	部署部分的设置
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
-  repo: https://github.com/taoweidong/taoweidong.github.io.git
+  type: git 
+  repo: ssh://git@github.com/taoweidong/taoweidong.github.io.git
   branch: master
   message: "博客更新: {{ now('YYYY-MM-DD HH:mm:ss') }}"
