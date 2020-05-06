@@ -22,7 +22,8 @@ tag:
 
 　　 用一个不带头节点的环形链表来处理 Josephu 问题：先构成一个有n个节点的单循环链表，然后由k节点起从1开始计数，记到m时，对应节点从链表中删除，然后再从被删除节点又从1开始计数，直到最后一个节点从链表中删除算法结束。
 
-![https://img2018.cnblogs.com/i-beta/1758606/202001/1758606-20200108221904301-793511856.png](https://img2018.cnblogs.com/i-beta/1758606/202001/1758606-20200108221904301-793511856.png)
+![单向环形链表](https://img-blog.csdnimg.cn/20200506222916737.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhb3dlaWRvbmcx,size_16,color_FFFFFF,t_70)
+
 
 <!-- more -->
 
